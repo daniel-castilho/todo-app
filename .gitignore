@@ -21,3 +21,4 @@
 /frontend/.env.production.local
 
 /frontend/*.log*
+/.vscode
