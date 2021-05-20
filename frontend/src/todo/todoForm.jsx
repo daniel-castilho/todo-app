@@ -1,17 +1,21 @@
 import React from "react";
+import Grid from "../template/grid";
+import IconButton from "../template/iconButton";
 
 export default (props) => {
 	return (
 		<div role="form" className="todoForm">
-			<div className="col-xs-12 col-sm-9 col-md-10">
-                <imput id="description" className="form-control" placeholder="Adicione uma tarefa"></imput>
-            </div>
+			<Grid cols="12 9 10">
+				<imput
+					id="description"
+					className="form-control"
+					placeholder="Adicione uma tarefa">
+                </imput>
+			</Grid>
 
-            <div className="col-xs-12 col-sm-3 col-md-2">
-                <button className="btn btn-primary">
-                    <i className="fa fa-plus "></i>
-                </button>
-            </div>
+			<Grid cols="12 3 2">
+				<IconButton style="primary" icon="plus"></IconButton>
+			</Grid>
 		</div>
 	);
 };
