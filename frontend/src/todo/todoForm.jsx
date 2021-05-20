@@ -7,11 +7,13 @@ export default (props) => {
 	return (
 		<div role="form" className="todoForm">
 			<Grid cols="12 9 10">
-				<imput
+				<input
 					id="description"
 					className="form-control"
-					placeholder="Adicione uma tarefa">
-                </imput>
+					placeholder="Adicione uma tarefa"
+                    onChange={props.handleChange}
+                    value={props.description}>
+                </input>
 			</Grid>
 
 			<Grid cols="12 3 2">
