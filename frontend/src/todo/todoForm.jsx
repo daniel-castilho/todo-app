@@ -3,7 +3,6 @@ import Grid from "../template/grid";
 import IconButton from "../template/iconButton";
 
 export default (props) => {
-    console.log(props.handleAdd)
 	return (
 		<div role="form" className="todoForm">
 			<Grid cols="12 9 10">

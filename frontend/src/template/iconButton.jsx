@@ -2,7 +2,6 @@ import React from "react";
 import If from "./if";
 
 export default (props) => {
-    console.log(props.hide)
 	return (
 		<If test={!props.hide}>
 			<button
