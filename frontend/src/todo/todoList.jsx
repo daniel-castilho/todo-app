@@ -7,7 +7,7 @@ export default (props) => {
 		const list = props.list || [];
 		return list.map((todo) => (
 			<tr key={todo._id}>
-				<td className={todo.done ? 'markAsDone' : ''}>{todo.description}</td>
+				<td className={todo.done ? 'markedAsDone' : ''}>{todo.description}</td>
 				<td>
 					<IconButton
 						style="success"
@@ -34,7 +34,7 @@ export default (props) => {
 			<thead>
 				<tr>
 					<th>Descrição</th>
-					<th>Ações</th>
+					<th className='tableActions'>Ações</th>
 				</tr>
 			</thead>
 			<tbody>{renderRows()}</tbody>
